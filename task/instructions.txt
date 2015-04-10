@@ -1,0 +1,5 @@
+Your task is to create a video playing web application.  The included file screen-rendering.jpg illustrates roughly how the page should look. You are free to express your creativity by applying a nice design to the page.
+
+The included JSON data (movies.json) must be used as the source data for the page content.  Write the application as you would if the data were being fetched from a remote REST API.
+
+Please complete and return this to us in 3 days.  If you have any questions, please don't hesitate to ask.
