@@ -3,7 +3,7 @@
     root.App.Views = root.App.Views || {};
     root.App.Views.MovieDetailsView = factory(root.$, root.Backbone, root.App);
 
-}(this, function($, _, Backbone, App) {
+}(this, function($, Backbone, App) {
     if(!$) throw new Error('JQuery.js is not available');
     if(!Backbone) throw new Error('Backbone.js is not available');
     if(!App && !App.Template) throw new Error('App.Template is not available');
