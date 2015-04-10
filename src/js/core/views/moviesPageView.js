@@ -13,19 +13,29 @@
         template: App.Template('movies_view'),
 
         initialize: function() {
-            
+
         },
 
         events: {
             'click a.btn-preview': 'showMovie'
         },
 
+        setCurrentMovie: function($element) {
+            this.$el.find('.item-movie').removeClass('active').removeClass('act');
+
+            $element.parent().addClass('active'); 
+        },
+
         showMovie: function(e) {
             e.preventDefault();
 
-            var id = $(e.currentTarget).data('id');
-            var view = new App.Views.VideoPlayerView( { model: this.collection.get(id) } );
+            var $element = $(e.currentTarget);
+            var id       = $element.data('id');
+            var view     = new App.Views.VideoPlayerView( { model: this.collection.get(id) } );
+
             this.$el.find('#video-player').replaceWith( view.render().el );
+
+            this.setCurrentMovie($element);                       
         },
 
         render: function() {          
