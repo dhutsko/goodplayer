@@ -22,7 +22,6 @@ conf =
   scriptsCoreDir: 
     main       : 'src/js/core'
     helpers    : 'src/js/core/helpers'
-    models     : 'src/js/core/models'
     views      : 'src/js/core/views'
     collections: 'src/js/core/collections'
   product: 'default'
@@ -151,7 +150,6 @@ buildHTMLPage = (file, versionInfo) ->
 compileJs = (callback) ->
   jsLib  = readdirRecursive conf.scriptsLibDir
   jsCore = readdirRecursive(conf.scriptsCoreDir.helpers)
-            .concat(readdirRecursive(conf.scriptsCoreDir.models))
             .concat(readdirRecursive(conf.scriptsCoreDir.collections))
             .concat(readdirRecursive(conf.scriptsCoreDir.views))
             .concat(readdir(conf.scriptsCoreDir.main))
