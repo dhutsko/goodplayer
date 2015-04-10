@@ -1,0 +1,15 @@
+<div class="row text-center">
+	{>video_player_view:.[0] /}
+</div>
+
+<div class="row text-center">
+	{#.}
+	<div class="col-lg-3">
+		<a class="btn-preview" data-id="{id}" href="#">
+			<img src="/images/{images.cover}" alt="Generic placeholder image" width="141" height="199">
+			<h6>{title}, {meta.releaseYear}</h6>
+		</a>
+		<p><a href="#movies/{id}" class="btn btn-default btn-movie-details" href="#" role="button">View details &raquo;</a></p>
+	</div><!-- /.col-lg-2 -->
+	{/.}
+</div>

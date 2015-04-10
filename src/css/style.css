@@ -1,0 +1,45 @@
+@media (min-width: 768px) {
+	#navbar .nav {
+		margin-right: 0;
+		margin-left: 10px;
+	  	float: right;
+	}
+}
+
+@media (min-width: 768px) {
+	.col-lg-3 {
+	  width: 50%;
+	  float: left;
+	}
+}
+
+.btn-movie-details{
+	width: 141px;
+}
+
+#video-player video {
+  	width: 100%;
+}
+
+.container-movie-details #video-player {
+	width: 100%;
+}
+
+.container-movie-details .carousel {
+	margin-bottom: 0px;
+}
+
+.col-lg-3 {
+	padding-top:10px;
+	padding-bottom: 10px;
+}
+
+.navbar-wrapper {
+	position: relative !important;
+}
+
+.about-icon {
+	width: 50px;
+	float: left;
+	padding-right: 10px;
+}

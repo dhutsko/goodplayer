@@ -1,0 +1,19 @@
+<div id="video-player">
+    <video controls poster="/images/{images.placeholder}" >
+    	{#.streams}
+		<source src="{url}" type="video/{type}">
+    	{/.streams}
+		Your browser does not support the video tag.
+	</video>
+	<div class="text-left">
+		<h3><span>{.title}</span> (<span>{.meta.releaseYear}</span>)</h3>
+		<p>
+			{?.meta.directors}
+				Directors: {#.meta.directors} {name},{/.meta.directors} <br>
+			{/.meta.directors}
+			{?.meta.actors}
+				Actors: {#.meta.actors} {name},{/.meta.actors}
+			{/.meta.actors}
+		</p>
+	</div>	
+</div>

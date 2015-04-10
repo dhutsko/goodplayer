@@ -1,0 +1,24 @@
+<div class="container-movie-details">
+  <div class="row">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="/images/{images.placeholder}" alt="{title}">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{title} ({meta.releaseYear})</h1>
+              <p>{description}</p>
+              <p><a class="btn btn-lg btn-primary" href="#movies" role="button">Back to movies</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row">
+    {>video_player_view:. /}
+  </div>
+</div>
+
+
