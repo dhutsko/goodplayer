@@ -21,12 +21,8 @@
   	width: 100%;
 }
 
-.container-movie-details #video-player {
-	width: 100%;
-}
-
-.container-movie-details .carousel {
-	margin-bottom: 0px;
+.carousel {
+	margin-bottom: 0px !important;
 }
 
 .col-lg-3 {
