@@ -3,11 +3,10 @@
     root.App.Views = root.App.Views || {};
     root.App.Views.VideoPlayerView = factory(root.$, root.Backbone, root.App);
 
-}(this, function($, Backbone) {
+}(this, function($, Backbone ,App) {
     if(!$) throw new Error('JQuery.js is not available');
     if(!Backbone) throw new Error('Backbone.js is not available');
     if(!App && !App.Template) throw new Error('App.Template is not available');
-    if(!App && !App.VideoPlayer) throw new Error('App.VideoPlayer is not available');
 
     return Backbone.View.extend({
         template: App.Template('video_player_view'),
