@@ -24,3 +24,7 @@ To install Good Player by itself (ahem), use the following instructions.
   3. Build GoodPlayer
 
         ./build.sh -b
+
+  4. Host GoodPlayer on any web server
+
+        IIS, Apache, etc.
