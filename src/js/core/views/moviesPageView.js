@@ -23,7 +23,6 @@
 
         showMovie: function(e) {
             e.preventDefault();
-            $('video')[0].pause();
 
             var id = $(e.currentTarget).data('id');
             var view = new App.Views.VideoPlayerView( { model: this.collection.get(id) } );

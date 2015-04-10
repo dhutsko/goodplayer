@@ -52,7 +52,7 @@ requireAll = ->
       console.error "Could not load #{module} - please ensure that it has been installed via npm."
       process.exit 1
 
-[Q, fs, cp, less, watchr, clean_css, uglify] = requireAll 'q', 'fs', 'child_process', 'less', 'watchr', 'clean-css', 'uglify-js'
+[Q, fs, cp, clean_css, uglify] = requireAll 'q', 'fs', 'child_process', 'clean-css', 'uglify-js'
 
 templater =
   dust: requireOne 'dustjs-linkedin'
