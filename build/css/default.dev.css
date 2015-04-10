@@ -45,7 +45,6 @@
 
 .item-movie.active, .item-movie.act:first-child {
 	background: #F7F7F7;
-	border: 1px solid #EAEAEA;
 }
 
 
