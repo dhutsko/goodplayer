@@ -234,7 +234,6 @@ cssMinify = (inputFiles, out, fromString = false) ->
     
     if out then fs.writeFile "#{out}", min, conf.encoding, ->
       console.log "CSS Minification Done! - #{out}" if conf.verbose 
-      cp.spawn 'blessc', [ "#{out}", out, "--no-cache-buster" ]
       task.resolve min
 
     task.promise
